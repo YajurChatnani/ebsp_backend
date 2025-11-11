@@ -141,6 +141,9 @@ with app.app_context():
 # ----------------------------------------
 # ✅ ROUTES
 # ----------------------------------------
+@app.route('/',methods=['GET'])
+def index():
+    return "Electricity Billing System Backend is running!"
 
 # ---- Customers ----
 @app.route('/api/customers', methods=['GET'])
